@@ -1,6 +1,4 @@
 # SemDDA
-Semantics-based Database Dependency Analyzer
-
 SemDDA is a dependency analyzer written in Java. It provides a user-friendly interface to compute both syntax and semantic-based Database-Database dependency in various abstract domains of interest. 
 
 The tool consists of following modules:
