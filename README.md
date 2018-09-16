@@ -3,19 +3,19 @@
 SemDDA is a database dependency analyzer written in Java. It provides a user-friendly interface to compute both syntax and semantic-based database-database dependencies in various abstract domains of interest. 
 
 The tool consists of following modules:
-* Proformat: It preprocesses input program file to add line numbers (starting from zero) to all statements, ignoring comments. Assuming input programs syntactically correct, the module separates program's statements based on the predefined delimiters and right braces [3]. During this process, it also computes Non-Comment Lines of Code (NCLOC) and the number of SQL statements present in the program. In particular, the presence of Data Manipulation Language (DML) statements is identified based on the presence of keywords such as **SELECT**, **UPDATE**, **DELETE** and **INSERT** in the statements.
-* ExtractInfo: This module extracts detail information about input programs, i.e. control statements, defined variables, used variables, etc. for all statements in the program.
-* Dependency: It computes syntax-based dependencies among program statements using the information computed by "ExtractInfo" module.
-* Tuning: The module automatically picks the best domain based on the  attributes relationship present in SQL statements.
-* Abstraction: The module "Abstraction" computes abstract semantics in the chosen abstract domain based on the data-flow analysis. Currently the module supports intervals, octagons and polyhedra abstract domains. 
-* Overlap: It identifies false dependency (if any) based on the semantics-based approximation of used and defined parts and their overlapping. 
+* __Proformat:__ It preprocesses input program file to add line numbers (starting from zero) to all statements, ignoring comments. Assuming input programs syntactically correct, the module separates program's statements based on the predefined delimiters and right braces [3]. During this process, it also computes Non-Comment Lines of Code (NCLOC) and the number of SQL statements present in the program. In particular, the presence of Data Manipulation Language (DML) statements is identified based on the presence of keywords such as **SELECT**, **UPDATE**, **DELETE** and **INSERT** in the statements.
+* __ExtractInfo:__ This module extracts detail information about input programs, i.e. control statements, defined variables, used variables, etc. for all statements in the program.
+* __Dependency:__ It computes syntax-based dependencies among program statements using the information computed by "ExtractInfo" module.
+* __Tuning:__ The module automatically picks the best domain based on the  attributes relationship present in SQL statements.
+* __Abstraction:__ The module "Abstraction" computes abstract semantics in the chosen abstract domain based on the data-flow analysis. Currently the module supports intervals, octagons and polyhedra abstract domains. 
+* __Overlap:__ It identifies false dependency (if any) based on the semantics-based approximation of used and defined parts and their overlapping. 
 
 # System requirements
-- JDK and JRE version 1.7 or higher version 
+- JDK version 7 or higher
 - 4 GB RAM or higher
 
 # How to run SemDDA
-- Step 1: Install JDK 7 or higher version  (https://docs.oracle.com/javase/7/docs/webnotes/install/).
+- Step 1: Install JDK 7 or higher  (https://docs.oracle.com/javase/7/docs/webnotes/install/).
 - Step 2: Download the source code.
 - Step 3: Compile the source code “SemDDA.java” and run. 
 
