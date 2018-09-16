@@ -31,14 +31,14 @@ With this interface, we have to browse two input files. One is .jsp program file
 2. Attribute names separated by a comma. 
 3. Domain range of each attribute in the form mentioning upper and lower limit.
 
-```
-   > Example:   
-       events 
+   > Example:  
+   ```
+         events 
        
-       eventid,no_of_days,year,no_of_presenters,no_of_perticipants 
+         eventid,no_of_days,year,no_of_presenters,no_of_perticipants 
        
-       1,10,1,20,2000,2020,1,25,1,30
-```
+         1,10,1,20,2000,2020,1,25,1,30
+   ```
 Note that, in case of multiple tables the same format as mention above will be repeated.       
       
 ### Graphical Interface II: 
