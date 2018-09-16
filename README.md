@@ -31,8 +31,8 @@ With this interface, we have to browse two input files. One is .jsp program file
 2. Attribute names separated by a comma. 
 3. Domain range of each attribute in the form mentioning upper and lower limit.
 
-   > Example
-```   
+```
+   > Example:   
        events 
        
        eventid,no_of_days,year,no_of_presenters,no_of_perticipants 
@@ -46,15 +46,18 @@ After browsing the input files, the database-database dependency results in synt
    
 ![alt text](https://github.com/angshumanjana/SemDDA/blob/master/Image/two.png)
 
-* Graphical Interface III: After browsing the input files, we select the  semantics-based approach which is shown below: 
+### Graphical Interface III: 
+After browsing the input files, we select the  semantics-based approach which is shown below: 
    
 ![alt text](https://github.com/angshumanjana/SemDDA/blob/master/Image/three.png)
 
-* Graphical Interface IV: After selecting semantics-based approach, the next step is shown below where the user can choose any one of the abstract domain or the user can choose the tuning button for automatically selecting the best abstract domain. 
+### Graphical Interface IV: 
+After selecting semantics-based approach, the next step is shown below where the user can choose any one of the abstract domain or the user can choose the tuning button for automatically selecting the best abstract domain. 
    
 ![alt text](https://github.com/angshumanjana/SemDDA/blob/master/Image/four.png)
 
-* Graphical Interface V: After selecting the polyhedra abstract domain, the semantics-based database-database dependency results is shown below: 
+### Graphical Interface V: 
+After selecting the polyhedra abstract domain, the semantics-based database-database dependency results is shown below: 
 
 ![alt text](https://github.com/angshumanjana/SemDDA/blob/master/Image/five.png)
 
