@@ -11,11 +11,11 @@ The tool consists of following modules:
 * Overlap: It identifies false dependency (if any) based on the semantics-based approximation of used and defined parts and their overlapping. 
 
 # System requirements
-- JDK and JRE version 1.7 needed for running SemDDA.
-- 4 GB RAM or higher. 
+- JDK and JRE version 1.7 or higher version 
+- 4 GB RAM or higher
 
 # How to run SemDDA
-- Step 1: Install JDK 7 and JRE 7  (https://docs.oracle.com/javase/7/docs/webnotes/install/).
+- Step 1: Install JDK 7 or higher version  (https://docs.oracle.com/javase/7/docs/webnotes/install/).
 - Step 2: Download the source code.
 - Step 3: Compile the source code “SemDDA.java” and run. 
 
@@ -32,13 +32,13 @@ With this interface, we have to browse two input files. One is .jsp program file
 3. Domain range of each attribute in the form mentioning upper and lower limit.
 
    > Example
-   
+```   
        events 
        
        eventid,no_of_days,year,no_of_presenters,no_of_perticipants 
        
        1,10,1,20,2000,2020,1,25,1,30
-       
+```
 Note that, in case of multiple tables the same format as mention above will be repeated.       
       
 ### Graphical Interface II: 
@@ -58,40 +58,31 @@ After browsing the input files, the database-database dependency results in synt
 
 ![alt text](https://github.com/angshumanjana/SemDDA/blob/master/Image/five.png)
 
-# Remark
+# Remarks
 The current implementation accepts only database-driven JSP codes and databases with numerical values.  
 
 # Contributors
 
-Please feel free to contact me at ajana.pcs13@iitp.ac.in
+- __Developed By:__ Angshuman Jana, Kalahasti Venkata Abhishekh, and Sanjeevini Devi Ganni
+- __Release Date:__ July 2018
+- __Contact:__ ajana.pcs13@iitp.ac.in / janaangshuman@gmail.com 
 
 # References
-1. Bagnara, R., Hill, P.M., Zaffanella, E.: The ppl: Toward a complete set of numerical abstractions for the analysis and verification of hardware and software systems. Tech. rep., Dipartimento di Matematica, Universita' di Parma, Italy (2006). http://www.cs.unipr.it/ppl/
 
-2. Jeannet., B., Mine', A.: Apron: A library of numerical abstract domains for static analysis. In: Proc. of the Int. Conf. on CAV. pp. 661–667 (2009). http://apron.cri.ensmp.fr/library/
+1. Angshuman Jana, Raju Halder, K. V. Abhishekh, S. D. Ganni, and Agostino Cortesi. Extending Abstract Interpretation to Dependency Analysis of Database Applications. IEEE Transactions on Software Engineering, Volume xx: xxx-xxx. IEEE, 2018.
 
-3. https://sourceforge.net/p/locjava/wiki/Home/ This application computes the LOC of a Java source code file.
+2. Bagnara, R., Hill, P.M., Zaffanella, E.: The ppl: Toward a complete set of numerical abstractions for the analysis and verification of hardware and software systems. Tech. rep., Dipartimento di Matematica, Universita' di Parma, Italy (2006). http://www.cs.unipr.it/ppl/
 
-4. Cousot, P., Cousot, R.: Abstract interpretation: a unified lattice model for static analysis of programs by construction or approximation of fixpoints. In: Proc. of the POPL’77. pp. 238–252. ACM Press, Los Angeles, CA, USA (1977).
+3. Jeannet., B., Mine', A.: Apron: A library of numerical abstract domains for static analysis. In: Proc. of the Int. Conf. on CAV. pp. 661–667 (2009). http://apron.cri.ensmp.fr/library/
 
-5. Chernikova, N.V.: Algorithm for discovering the set of all the solutions of a linear programming problem. vol. 8, pp. 282–293 (1968).
+4. https://sourceforge.net/p/locjava/wiki/Home/ This application computes the LOC of a Java source code file.
 
-6. Ottenstein, K.J., Ottenstein, L.M.: The program dependence graph in a software development environment. ACM SIGPLAN Notices 19(5), 177–184 (1984).
+5. Cousot, P., Cousot, R.: Abstract interpretation: a unified lattice model for static analysis of programs by construction or approximation of fixpoints. In: Proc. of the POPL’77. pp. 238–252. ACM Press, Los Angeles, CA, USA (1977).
 
-7. Willmor, D., Embury, S.M., Shao, J.: Program slicing in the presence of a database state. In: Proc. of the IEEE ICSM. pp. 448–452 (2004).
+6. Chernikova, N.V.: Algorithm for discovering the set of all the solutions of a linear programming problem. vol. 8, pp. 282–293 (1968).
 
+7. Ottenstein, K.J., Ottenstein, L.M.: The program dependence graph in a software development environment. ACM SIGPLAN Notices 19(5), 177–184 (1984).
 
-
-
-
+8. Willmor, D., Embury, S.M., Shao, J.: Program slicing in the presence of a database state. In: Proc. of the IEEE ICSM. pp. 448–452 (2004).
 
 
-
-
-
-
-
-
-
-
-Thanks
