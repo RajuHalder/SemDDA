@@ -1,5 +1,6 @@
-# SemDDA
-SemDDA is a dependency analyzer written in Java. It provides a user-friendly interface to compute both syntax and semantic-based Database-Database dependency in various abstract domains of interest. 
+# SemDDA: Semantics-based Database Dependecy Analyzer
+
+SemDDA is a database dependency analyzer written in Java. It provides a user-friendly interface to compute both syntax and semantic-based database-database dependencies in various abstract domains of interest. 
 
 The tool consists of following modules:
 * Proformat: It preprocesses input program file to add line numbers (starting from zero) to all statements, ignoring comments. Assuming input programs syntactically correct, the module separates program's statements based on the predefined delimiters and right braces [3]. During this process, it also computes Non-Comment Lines of Code (NCLOC) and the number of SQL statements present in the program. In particular, the presence of Data Manipulation Language (DML) statements is identified based on the presence of keywords such as **SELECT**, **UPDATE**, **DELETE** and **INSERT** in the statements.
@@ -19,7 +20,8 @@ The tool consists of following modules:
 - Step 3: Compile the source code “SemDDA.java” and run. 
 
 # Tool Usage
-* Graphical Interface I (accepting inputs from users): This is the starting interface window accepting the input program, as shown below:
+### Graphical Interface I (accepting inputs from users): 
+This is the starting interface window accepting the input program, as shown below:
 
 ![alt text](https://github.com/angshumanjana/SemDDA/blob/master/Image/one.png)
 
@@ -39,7 +41,8 @@ With this interface, we have to browse two input files. One is .jsp program file
        
 Note that, in case of multiple tables the same format as mention above will be repeated.       
       
-* Graphical Interface II: After browsing the input files, the database-database dependency results in syntax-based approach is shown below: 
+### Graphical Interface II: 
+After browsing the input files, the database-database dependency results in syntax-based approach is shown below: 
    
 ![alt text](https://github.com/angshumanjana/SemDDA/blob/master/Image/two.png)
 
@@ -57,6 +60,10 @@ Note that, in case of multiple tables the same format as mention above will be r
 
 # Remark
 The current implementation accepts only database-driven JSP codes and databases with numerical values.  
+
+# Contributors
+
+Please feel free to contact me at ajana.pcs13@iitp.ac.in
 
 # References
 1. Bagnara, R., Hill, P.M., Zaffanella, E.: The ppl: Toward a complete set of numerical abstractions for the analysis and verification of hardware and software systems. Tech. rep., Dipartimento di Matematica, Universita' di Parma, Italy (2006). http://www.cs.unipr.it/ppl/
@@ -80,7 +87,7 @@ The current implementation accepts only database-driven JSP codes and databases 
 
 
 
-Please feel free to contact me at ajana.pcs13@iitp.ac.in
+
 
 
 
